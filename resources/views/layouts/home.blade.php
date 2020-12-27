@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <title>@yield('title')</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>PHPJabbers.com | Free Car Rental Website Template</title>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="enes">
+    <<link rel="stylesheet" href="{{asset('assets/')}}/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{asset('assets/')}}/css/main.css" />
+    <noscript><link rel="stylesheet" href="{{asset('assets/')}}/css/noscript.css" /></noscript>
+
     @yield('css')
-    @yield('js')
+    @yield('headerjs')
 
 
 </head>
-<body>
-
-<div class="jumbotron text-center">
-    <h1>header</h1>
-    <p>Resize this responsive page to see the effect!</p>
-    <a href="/">Home</a>
-    <a href="/aboutus">About Us</a>
-@yield('header')
-
+<body class="is-preload">
+@include('home._header')
+<!-- Wrapper -->
+<div id="wrapper">
 </div>
 
-<div class="container">
-    <div class="row">
+@section('content')
+    içerik alanı
+    @show
 
-        @yield('sidebar')
-        @yield('content')
-    </div>
-</div>
-
-<div class="jumbotron text-center">
-    <h1>footor</h1>
-    <p>sayfa altı</p>
-    @yield('footer')
-</div>
-
+@include('home._footer')
+@yield('footerjs')
 
 </body>
+
 </html>
