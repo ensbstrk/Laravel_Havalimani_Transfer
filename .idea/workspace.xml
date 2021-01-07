@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a72ff567-cde3-4ea1-8b8c-f946c7aa0e9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/ADMIN/argon-dashboard-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/ADMIN/argon-dashboard-master/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +174,10 @@
       <workItem from="1608993980411" duration="450000" />
       <workItem from="1609008050550" duration="7677000" />
       <workItem from="1609092133857" duration="1348000" />
+      <workItem from="1609096453961" duration="6540000" />
+      <workItem from="1609103012925" duration="7311000" />
+      <workItem from="1609187780269" duration="4290000" />
+      <workItem from="1609529837584" duration="293000" />
     </task>
     <servers />
   </component>
@@ -191,13 +193,28 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609009976976" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1609012136488">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1609104404738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609012136488" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609104404738" />
+    <state x="474" y="66" key="RollbackChangesDialog" timestamp="1609102920016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="474" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609102920016" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1607203877428">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607203877428" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
