@@ -1,44 +1,45 @@
 <!-- Footer -->
-<footer class="footer pt-0">
-    <div class="row align-items-center justify-content-lg-between">
-        <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-                &copy; 2020 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                <li class="nav-item">
-                    <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
-</div>
-</div>
+<!-- Jquery Core Js -->
+<script src="{{asset('assets/admin')}}/plugins/jquery/jquery.min.js"></script>
 
-<!-- Argon Scripts -->
-<!-- Core -->
-<script src="{{asset('assets/')}}/admin/assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="{{asset('assets/')}}/admin/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{asset('assets/')}}/admin/assets/vendor/js-cookie/js.cookie.js"></script>
-<script src="{{asset('assets/')}}/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="{{asset('assets/')}}/admin/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-<!-- Optional JS -->
-<script src="{{asset('assets/')}}/admin/assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="{{asset('assets/')}}/admin/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<!-- Argon JS -->
-<script src="{{asset('assets/')}}/admin/assets/js/argon.js?v=1.2.0"></script>
+<!-- Bootstrap Core Js -->
+<script src="{{asset('assets/admin')}}/plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/node-waves/waves.js"></script>
+
+<!-- Jquery CountTo Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/jquery-countto/jquery.countTo.js"></script>
+
+<!-- Morris Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/raphael/raphael.min.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/morrisjs/morris.js"></script>
+
+<!-- ChartJs -->
+<script src="{{asset('assets/admin')}}/plugins/chartjs/Chart.bundle.js"></script>
+
+<!-- Flot Charts Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/flot-charts/jquery.flot.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/flot-charts/jquery.flot.time.js"></script>
+
+<!-- Sparkline Chart Plugin Js -->
+<script src="{{asset('assets/admin')}}/plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+<!-- Custom Js -->
+<script src="{{asset('assets/admin')}}/js/admin.js"></script>
+<script src="{{asset('assets/admin')}}/js/pages/index.js"></script>
+
+<!-- Demo Js -->
+<script src="{{asset('assets/admin')}}/js/demo.js"></script>
 
 
 
