@@ -224,6 +224,17 @@
                     </ul>
                 </li>
                 <li>
+
+                    <a href="{{route('admin_category')}}" class="menu-toggle">
+                        <i class="material-icons">view_list</i>
+                        <span>Category</span>
+                    </a>
+
+                    <ul class="ml-menu">
+
+                    </ul>
+                </li>
+                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">perm_media</i>
                         <span>Medias</span>
