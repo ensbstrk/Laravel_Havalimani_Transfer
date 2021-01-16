@@ -1,23 +1,20 @@
 @extends('layouts.admin')
 
-@section('title','Category List')
+@section('title','Category Home Page')
 
 @section('content')
 
+
+
     <section class="content">
-        <div class="card">
-            <div class="card-header">
-                <h2>Category</h2>
-                <a class="btn btn-primary m-t-15 waves-effect" href="{{route('admin_category_add')}}">Add Category</a>
-             
-            </div>
-        </div>
+
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="header">
                         <h2>
-                            Category List
+                                VERTICAL LAYOUT
+
                         </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown">
@@ -33,38 +30,76 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">
-                                <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Parent İd</th>
-                                    <th>Title</th>
-                                    <th>Status</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($datalist as $rs)
-                                    <tr>
-                                        <td>{{ $rs->id }}</td>
-                                        <td>{{ $rs->parent_id}}</td>
-                                        <td>{{ $rs->title}}</td>
-                                        <td>{{ $rs->status}}</td>
-                                        <td>Edit</td>
-                                        <td><a href="{{route('admin_category_delete',['id'=>$rs->id])}}"onclick="return confirm('Delete Emin Misin?')" >Delete</a></td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                        <form role="form"action="{{route('admin_category_create')}}" method="post">
+                            @csrf
+                            <label >Parent</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <select class="form-control" name="parent_id" show-tick>
+                                        <option selected="selected">Ana Category</option>
+                                        @foreach($datalist as $rs)
+                                        <option value="{{$rs->id}}">{{ $rs->title}}</option>
+                                        @endforeach
+
+                                    </select>
+                                </div>
+                            </div>
+                            <label >Title</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" name="title" class="form-control" >
+                                </div>
+                            </div>
+                            <label >Keywords</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" name="keywords" class="form-control" >
+                                </div>
+                            </div>
+                            <label >Description</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" name="description" class="form-control" >
+                                </div>
+                            </div>
+                            <label >Slug</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" name="slug" class="form-control" >
+                                </div>
+                            </div>
+                            <label >Status</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <div class="row clearfix">
+                                        <div class="col-sm-6">
+                                            <select class="form-control"name="status" show-tick>
+                                               <option selected="selected">False</option>
+                                                <option>True</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Category</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        
     </section>
+
+
+
 @endsection
+
 
 @section('footer')
     <!-- Jquery Core Js -->
@@ -99,3 +134,4 @@
 
     <!-- Demo Js -->
 @endsection
+

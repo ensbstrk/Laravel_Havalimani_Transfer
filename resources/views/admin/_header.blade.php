@@ -29,6 +29,37 @@
 
     <!-- Custom Css -->
     <link href="{{asset('assets/admin')}}/css/style.css" rel="stylesheet">
+    <link href="{{asset('assets/admin')}}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="{{asset('assets/admin')}}/css/themes/all-themes.css" rel="stylesheet" />
+
+    <link href={{asset('assets/admin')}}/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <link href="{{asset('assets/admin')}}/css/themes/all-themes.css" rel="stylesheet" />
+
+    <link href="{{asset('assets/admin')}}/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="{{asset('assets/admin')}}/plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="{{asset('assets/admin')}}/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="{{asset('assets/admin')}}/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="{{asset('assets/admin')}}/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <!-- Wait Me Css -->
+    <link href="{{asset('assets/admin')}}/plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="{{asset('assets/admin')}}/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="{{asset('assets/admin')}}/css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="{{asset('assets/admin')}}/css/themes/all-themes.css" rel="stylesheet" />

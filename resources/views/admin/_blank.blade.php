@@ -15,7 +15,7 @@
         </div>
     </div>
     <!-- #Footer -->
-    </aside>
+
     <!-- #END# Left Sidebar -->
     <!-- Right Sidebar -->
     <aside id="rightsidebar" class="right-sidebar">
@@ -160,7 +160,6 @@
         </div>
     </aside>
     <!-- #END# Right Sidebar -->
-    </section>
 
     <section class="content">
         <div class="container-fluid">
@@ -169,3 +168,4 @@
             </div>
         </div>
     </section>
+@endsection
