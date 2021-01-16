@@ -9,7 +9,7 @@
             <div class="card-header">
                 <h2>Category</h2>
                 <a class="btn btn-primary m-t-15 waves-effect" href="{{route('admin_category_add')}}">Add Category</a>
-             
+
             </div>
         </div>
         <div class="row clearfix">
@@ -52,7 +52,7 @@
                                         <td>{{ $rs->parent_id}}</td>
                                         <td>{{ $rs->title}}</td>
                                         <td>{{ $rs->status}}</td>
-                                        <td>Edit</td>
+                                        <td><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit </a> </td>
                                         <td><a href="{{route('admin_category_delete',['id'=>$rs->id])}}"onclick="return confirm('Delete Emin Misin?')" >Delete</a></td>
                                     </tr>
                                 @endforeach
