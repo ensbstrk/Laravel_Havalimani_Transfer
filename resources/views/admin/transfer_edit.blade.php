@@ -30,7 +30,7 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form action="{{route('admin_transfer_update',['id'=>$data->id])}}" method="post">
+                        <form action="{{route('admin_transfer_update',['id'=>$data->id ])}}" method="post" enctype="multipart/form-data">
                          @csrf
                             <label >Parent</label>
                             <div class="form-group">
@@ -92,12 +92,23 @@
                                     <input type="text" name="fueltype" value="{{$data->fueltype}}" class="form-control" >
                                 </div>
                             </div>
+                            <label >Image</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="file" name="image"  class="form-control" >
+                                    @if($rs->image)
+                                        <img src="{{Storage::url($rs->image)}}" height="60" alt="">
+                                    @endif
+                                </div>
+                            </div>
                             <label >Slug</label>
                             <div class="form-group">
                                 <div class="form-line">
                                     <input type="text" name="slug" value="{{$data->slug}}" class="form-control" >
                                 </div>
                             </div>
+
+
                             <label >Status</label>
                             <div class="form-group">
                                 <div class="form-line">

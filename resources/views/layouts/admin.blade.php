@@ -17,9 +17,9 @@
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{asset('assets/')}}/admin/assets/css/argon.css?v=1.2.0" type="text/css">
-
     @yield('css')
     @yield('javascript')
+
 </head>
 
 <body>

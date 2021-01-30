@@ -8,6 +8,7 @@ use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class TransferController extends Controller
 {
@@ -20,7 +21,9 @@ class TransferController extends Controller
     {
         $datalist=Transfer::all();
         return view('admin.transfer',['datalist'=>$datalist]);
+
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -54,6 +57,7 @@ class TransferController extends Controller
         $data->capacity=$name=$request->input('capacity');
         $data->detail=$name=$request->input('detail');
         $data->fueltype=$name =$request->input('fueltype');
+        $data->image = Storage::putFile('images',$request->file('image'));
         $data->save();
         return redirect()->route('admin_transfer');
     }
@@ -105,6 +109,10 @@ class TransferController extends Controller
         $data->capacity=$name=$request->input('capacity');
         $data->detail=$name=$request->input('detail');
         $data->fueltype=$name =$request->input('fueltype');
+        $data->image=Storage::putFile('images',$request->file('image'));
+        if ($request->file('image')!=null){
+                $data->image=Storage::putFile('images',$request->file('image'));
+        }
         $data->save();
         return redirect()->route('admin_transfer');
     }

@@ -1,3 +1,4 @@
+
 @extends('layouts.admin')
 
 @section('title','Add Transfer')
@@ -13,7 +14,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                               Transfer Add
+                            Transfer Add
 
                         </h2>
                         <ul class="header-dropdown m-r--5">
@@ -30,14 +31,14 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form action="{{route('admin_transfer_store')}}" method="post">
+                        <form action="{{route('admin_transfer_store')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <label >Parent</label>
                             <div class="form-group">
                                 <div class="form-line">
                                     <select class="form-control" name="category_id" show-tick>
                                         @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}">{{ $rs->title}}</option>
+                                            <option value="{{$rs->id}}">{{ $rs->title}}</option>
                                         @endforeach
 
                                     </select>
@@ -98,13 +99,19 @@
                                     <input type="text" name="slug" class="form-control" >
                                 </div>
                             </div>
+                            <label >Image</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="file" name="image" class="form-control" >
+                                </div>
+                            </div>
                             <label >Status</label>
                             <div class="form-group">
                                 <div class="form-line">
                                     <div class="row clearfix">
                                         <div class="col-sm-6">
                                             <select class="form-control"name="status" show-tick>
-                                               <option selected="selected">False</option>
+                                                <option selected="selected">False</option>
                                                 <option>True</option>
 
                                             </select>
@@ -164,4 +171,5 @@
 
     <!-- Demo Js -->
 @endsection
+
 

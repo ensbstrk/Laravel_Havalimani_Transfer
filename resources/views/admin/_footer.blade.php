@@ -1,5 +1,6 @@
 <!-- Footer -->
-<!-- Jquery Core Js -->
+
+
 <script src="{{asset('assets/admin')}}/plugins/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core Js -->
@@ -45,6 +46,10 @@
 <script src="{{asset('assets/admin')}}/js/pages/forms/basic-form-elements.js"></script>
 
 <script src="{{asset('assets/admin')}}/plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('assets/admin')}}/plugins/jquery-knob/jquery.knob/jquery.min.js"></script>
+
+
+
 
 <!-- Bootstrap Core Js -->
 <script src="{{asset('assets/admin')}}/plugins/bootstrap/js/bootstrap.js"></script>
@@ -76,5 +81,6 @@
 
 <!-- Demo Js -->
 <script src="{{asset('assets/admin')}}/js/demo.js"></script>
+
 
 

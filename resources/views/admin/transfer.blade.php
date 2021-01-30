@@ -54,14 +54,16 @@
                                 @foreach($datalist as $rs)
                                     <tr>
                                         <td>{{ $rs->id }}</td>
-                                        <td>{{ $rs->category_id}}</td>
+                                        <td>{{ $rs->category->title}}</td>
                                         <td>{{ $rs->title}}</td>
                                         <td>{{ $rs->baseprice}}</td>
                                         <td>{{ $rs->kmprice}}</td>
                                         <td>{{ $rs->capacity}}</td>
                                         <td>{{ $rs->fueltype}}</td>
                                         <td>
-                                            <img src="{{$rs->image}}">
+                                            @if($rs->image)
+                                                <img src="{{Storage::url($rs->image)}}" width="60" height="60">
+                                                @endif
                                         </td>
                                         <td>{{ $rs->status}}</td>
                                         <td><a href="{{route('admin_transfer_edit',['id'=>$rs->id])}}">Edit</a></td>
