@@ -11,7 +11,7 @@
             <div class="info">
                 @auth
                     <a href="#" class="d-block">{{ Auth:: user()->name }} </a>
-                    <a href="{{ route('admin_logout') }}" class="d-block">Logout</a>
+                    <a href="{{ route('logout') }}" class="d-block">Logout</a>
                 @endauth
 
             </div>
@@ -38,12 +38,7 @@
         <div class="menu">
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="active">
-                    <a href="index.html">
-                        <i class="material-icons">home</i>
-                        <span>Home</span>
-                    </a>
-                </li>
+
                 <li>
                     <a href="pages/typography.html">
                         <i class="material-icons">text_fields</i>
@@ -239,6 +234,17 @@
                     <a href="{{route('admin_transfer')}}" class="menu-toggle">
                         <i class="material-icons">view_list</i>
                         <span>Transfer</span>
+                    </a>
+
+                    <ul class="ml-menu">
+
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="{{route('admin_message')}}" class="menu-toggle">
+                        <i class="material-icons">view_list</i>
+                        <span>Contact</span>
                     </a>
 
                     <ul class="ml-menu">

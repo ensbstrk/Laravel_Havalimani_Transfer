@@ -2,23 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72ff567-cde3-4ea1-8b8c-f946c7aa0e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AirportTransferSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AirportTransferSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d22b1ac2-c799-4e94-a68c-41b8f85b2d7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d22b1ac2-c799-4e94-a68c-41b8f85b2d7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign/pages/ui/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign/pages/ui/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TransferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TransferController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Transfer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transfer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,8 +202,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\AirportTransferSystem\resources\views\admin" />
-      <recent name="C:\Users\User\Desktop\AirportTransferSystem\public\assets" />
       <recent name="C:\Users\User\Desktop\AirportTransferSystem\resources\views\home" />
+      <recent name="C:\Users\User\Desktop\AirportTransferSystem\public\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -222,6 +249,12 @@
       <workItem from="1611604086617" duration="8028000" />
       <workItem from="1611613072090" duration="1429000" />
       <workItem from="1611928374691" duration="698000" />
+      <workItem from="1612036329003" duration="12258000" />
+      <workItem from="1612119777666" duration="12629000" />
+      <workItem from="1612175261730" duration="7374000" />
+      <workItem from="1612289289771" duration="15729000" />
+      <workItem from="1612341454883" duration="11083000" />
+      <workItem from="1612373886184" duration="16192000" />
     </task>
     <servers />
   </component>
@@ -233,18 +266,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="309" y="42" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1610930445328" />
+    <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1612123019338">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1612123019338" />
     <state x="59" y="205" key="#SQL_Dialects" timestamp="1610311230128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="59" y="205" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1610311230128" />
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610288887251">
+    <state x="274" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612353806301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610288887251" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611260801787">
+    <state x="274" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1612353806301" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612042639437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611260801787" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612042639437" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612383161730">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612383161730" />
     <state x="429" y="208" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608489031191">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -265,10 +306,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="465" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611248693615" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610834177762">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1612378594961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610834177762" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612378594961" />
     <state x="474" y="66" key="RollbackChangesDialog" timestamp="1609102920016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -285,9 +326,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="582" y="240" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728@0.0.1366.728" timestamp="1610274409039" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610568669262">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612176654568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610568669262" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612176654568" />
   </component>
 </project>

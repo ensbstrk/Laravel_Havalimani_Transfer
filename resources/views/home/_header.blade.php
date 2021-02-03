@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -17,7 +18,7 @@
         <div class="inner">
 
             <!-- Logo -->
-            <a href="index.html" class="logo">
+            <a href="{{route('home')}}" class="logo">
                 <span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
             </a>
 
@@ -35,25 +36,16 @@
     <nav id="menu">
         <h2>Menu</h2>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="{{route('home')}}" class="active">Home</a></li>
+            <li><a href="{{route('aboutus')}}" class="active">Aboutus</a></li>
+            <li><a href="{{route('references')}}" class="active">References</a></li>
+            <li><a href="{{route('fag')}}" class="active">Fag</a></li>
+            <li><a href="{{route('contact')}}" class="active">Contact</a></li>
 
-            <li><a href="offers.html">Offers</a></li>
 
-            <li><a href="fleet.html">Fleet</a></li>
+           @include('home._category')
 
-            <li>
-                <a href="#" class="dropdown-toggle">About</a>
 
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="terms.html">Terms</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-
+</div>
+</body>
+</html>

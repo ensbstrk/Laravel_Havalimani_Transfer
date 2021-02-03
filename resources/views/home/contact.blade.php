@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 
-@section('title','About Us -' . $setting->title )
+@section('title','Contact -' . $setting->title )
 
 
 @section('description')
@@ -17,9 +17,14 @@
 @section('content')
 <div id="main">
     <div class="inner">
-        <h1>About Us</h1>
+        <h1>Contact</h1>
+        <div class="row">
+            <div >
 
-       {!! $setting->aboutus !!}
+                {!! $setting->contact !!}
+            </div>
+
+        </div>
 
     </div>
 </div>

@@ -1,14 +1,14 @@
 @extends('layouts.admin')
 
-@section('title','Category List')
+@section('title','Contact Mesaages List')
 
 @section('content')
 
     <section class="content">
         <div class="card">
+
             <div class="card-header">
-                <h2>Category</h2>
-                <a class="btn btn-primary m-t-15 waves-effect" href="{{route('admin_category_add')}}">Add Category</a>
+                <h2>Messages</h2>
 
             </div>
         </div>
@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            Category List
+                            @include('home.message')
                         </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown">
@@ -38,11 +38,12 @@
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Parent </th>
-                                    <th>Title</th>
-                                    <th>Status</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Admin Note</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -50,14 +51,20 @@
                                     <tr>
                                         <td>{{ $rs->id }}</td>
 
-                                        <td>
-                                            {{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
+                                        <td>{{ $rs->name}}</td>
+                                        <td>{{ $rs->email}}</td>
+                                        <td>{{ $rs->phone}}</td>
+                                        <td>{{ $rs->subject}}</td>
+                                        <td>{{ $rs->message}}</td>
+                                        <td>{{ $rs->note}}</td>
+                                        <td>{{ $rs->status}}</td>
+                                        <td><a href="{{route('admin_message_edit', ['id' => $rs->id])}}" onclick="return !window.open(this.href, '','top=50, left=100, width=1100, height=700')">Edit
+
+                                            </a>
                                         </td>
 
-                                        <td>{{ $rs->title}}</td>
-                                        <td>{{ $rs->status}}</td>
-                                        <td><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit </a> </td>
-                                        <td><a href="{{route('admin_category_delete',['id'=>$rs->id])}}"onclick="return confirm('Delete Emin Misin?')" >Delete</a></td>
+
+                                        <td><a href="{{route('admin_message_delete',['id'=>$rs->id])}}"onclick="return confirm('Delete Emin Misin?')" >Delete</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -103,3 +110,4 @@
 
     <!-- Demo Js -->
 @endsection
+
