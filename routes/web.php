@@ -39,6 +39,14 @@ Route::get('/references', [HomeController::class, 'references'])->name('referenc
 Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::get('/transfer/{id}/{slug}', [HomeController::class, 'transfer'])->name('transfer');
+Route::get('/categorytransfers/{id}/{slug}', [HomeController::class, 'categorytransfers'])->name('categorytransfers');
+Route::get('/rezervasion/{id}', [HomeController::class, 'rezervasion'])->name('rezervasion');
+Route::post('/gettransfer', [HomeController::class, 'gettransfer'])->name('gettransfer');
+Route::get('/transferlist/{search}', [HomeController::class, 'transferlist'])->name('transferlist');
+
+
+
 
 
 

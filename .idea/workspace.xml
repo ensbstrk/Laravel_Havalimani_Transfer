@@ -2,50 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72ff567-cde3-4ea1-8b8c-f946c7aa0e9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d22b1ac2-c799-4e94-a68c-41b8f85b2d7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d22b1ac2-c799-4e94-a68c-41b8f85b2d7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign/pages/ui/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/ADMIN/AdminBSBMaterialDesign/pages/ui/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TransferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TransferController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/fleet.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/TRANSFER/car-rental-website-template-186/fleet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Homecontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/transfer_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/transfer_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/test.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +169,7 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
@@ -201,8 +177,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\AirportTransferSystem\resources\views\admin" />
       <recent name="C:\Users\User\Desktop\AirportTransferSystem\resources\views\home" />
+      <recent name="C:\Users\User\Desktop\AirportTransferSystem\resources\views\admin" />
       <recent name="C:\Users\User\Desktop\AirportTransferSystem\public\assets" />
     </key>
   </component>
@@ -254,7 +230,13 @@
       <workItem from="1612175261730" duration="7374000" />
       <workItem from="1612289289771" duration="15729000" />
       <workItem from="1612341454883" duration="11083000" />
-      <workItem from="1612373886184" duration="16192000" />
+      <workItem from="1612373886184" duration="16842000" />
+      <workItem from="1612393585041" duration="533000" />
+      <workItem from="1612462363297" duration="17659000" />
+      <workItem from="1612525235056" duration="7601000" />
+      <workItem from="1612551890240" duration="7566000" />
+      <workItem from="1612561116871" duration="163000" />
+      <workItem from="1612600602925" duration="24541000" />
     </task>
     <servers />
   </component>
@@ -306,10 +288,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="465" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611248693615" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1612378594961">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1612467356718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612378594961" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612467356718" />
     <state x="474" y="66" key="RollbackChangesDialog" timestamp="1609102920016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

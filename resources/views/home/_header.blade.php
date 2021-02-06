@@ -1,8 +1,22 @@
+<br>
+<div class="row">
+    <div class="form-group">
+        <div class="input-group">
+            <form action="{{route('gettransfer')}}" method="post">
+                @csrf
+                @livewire('search')
+
+                <span class="input-group-addon"><a href="#"><i class="fa fa-search"></i></a></span>
+            </form>
+            @livewireScripts
+        </div>
+    </div>
+</div>
 
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>PHPJabbers.com | Free Car Rental Website Template</title>
+    <title>Basturk Transfer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{asset('assets/')}}/bootstrap/css/bootstrap.min.css" />
@@ -19,7 +33,7 @@
 
             <!-- Logo -->
             <a href="{{route('home')}}" class="logo">
-                <span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
+                <span class="fa fa-car"></span> <span class="title">Basturk Transfer</span>
             </a>
 
             <!-- Nav -->
