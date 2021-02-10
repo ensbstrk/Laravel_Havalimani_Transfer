@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','Add Category')
+@section('title','Edit rezervation')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                               Category Add
+                            rezervation Edit
 
                         </h2>
                         <ul class="header-dropdown m-r--5">
@@ -30,62 +30,33 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form role="form" action="{{route('admin_category_create')}}" method="post">
+                        <form role="form" action="{{route('admin_rezervation_update',['id'=>$data->id])}}" method="post">
                             @csrf
-                            <label >Parent</label>
+                            <label >Transfer_id</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <select class="form-control" name="parent_id" show-tick>
-                                        <option selected="selected">Ana Category</option>
-                                        @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}">{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
-                                        @endforeach
-
-                                    </select>
+                                    <input type="text" name="transfer_id" value="{{$data->transfer_id}}" class="form-control" >
                                 </div>
                             </div>
-                            <label >Title</label>
+                            <label >From location id</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="title" class="form-control" >
+                                    <input type="text" name="from_location_id" value="{{$data->from_location_id}}" class="form-control" >
                                 </div>
                             </div>
-                            <label >Keywords</label>
+                            <label >To location id</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="keywords" class="form-control" >
+                                    <input type="text" name="to_location_id" value="{{$data->to_location_id}}" class="form-control" >
                                 </div>
                             </div>
-                            <label >Description</label>
+                            <label >Price</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="description" class="form-control" >
+                                    <input type="text" name="price" value="{{$data->price}}" class="form-control" >
                                 </div>
                             </div>
-                            <label >Slug</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="slug" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Status</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-6">
-                                            <select class="form-control"name="status" show-tick>
-                                               <option selected="selected">False</option>
-                                                <option>True</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Category</button>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Edit Category</button>
                         </form>
                     </div>
                 </div>

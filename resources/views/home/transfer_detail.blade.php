@@ -9,28 +9,29 @@
 @endsection
 @section('keyworlds',$data->keyworlds)
 
-<a href="/login">Login</a>
-<a href="/register">register</a>
-<a href="/logout">Logout</a>
 
 
 @section('content')
 <div id="main">
     <div class="inner">
-        <section class="tiles">
-            <article class="style1">
+
+            <section class="tiles">
+                <article class="style">
 									<span class="image">
-										<img src="{{asset('assets/')}}/images/product-1-720x480.jpg" alt="" />
+										<img src="{{\Illuminate\Support\Facades\Storage::url($data->image)}}" alt="" />
 									</span>
-                <a href="#footer" class="scrolly">
-                    <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                    <a href="{{route('user_transfer_add')}}" class="scrolly">
 
-                    <p>price from: <strong> $ 140.00</strong> per weekend</p>
+                        <p>price:{{$data->baseprice}} Arac:{{$data->title}}</p>
+
+                        <div class="content">
+
+                        </div>
+                    </a>
+                </article>
+            </section>
 
 
-                </a>
-            </article>
-        </section>
     </div>
-</div>
+
 @endsection

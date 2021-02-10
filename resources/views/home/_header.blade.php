@@ -51,10 +51,14 @@
         <h2>Menu</h2>
         <ul>
             <li><a href="{{route('home')}}" class="active">Home</a></li>
+            <li><a href="/login" class="active">Login</a></li>
+            <li><a href="/register" class="active">Register</a></li>
+            <li><a href="/logout" class="active">Logout</a></li>
             <li><a href="{{route('aboutus')}}" class="active">Aboutus</a></li>
             <li><a href="{{route('references')}}" class="active">References</a></li>
-            <li><a href="{{route('fag')}}" class="active">Fag</a></li>
+
             <li><a href="{{route('contact')}}" class="active">Contact</a></li>
+            <li><a href="{{route('myprofile')}}" class="active">My Account</a></li>
 
 
            @include('home._category')

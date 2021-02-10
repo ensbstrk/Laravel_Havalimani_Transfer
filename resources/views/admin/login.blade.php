@@ -34,6 +34,7 @@
     </div>
     <div class="card">
         <div class="body">
+            @include('home.message')
             <form action="{{route('admin_logincheck')}}" method="post">
                 @csrf
                 <div class="msg">Sign in to start your session</div>

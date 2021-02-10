@@ -6,9 +6,8 @@
         @foreach($slider as $rs)
         <div class="carousel-item">
             <h3>{{$rs->title}}</h3>
-            <h3 class="carousel"><{{$rs->baseprice}}</h3>
+            <h3 class="carousel">{{$rs->baseprice}}</h3>
             <img class="d-block  w-100" src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" style="height: 650px"  >
-             <button href="{{route('transfer',['id'=>$rs->id,'slug'=>$rs->slug])}}" class="btn-dark">incele</button>
         </div>
 
         @endforeach

@@ -4,9 +4,6 @@
 @section('title','User Profil')
 
 
-<a href="/login">Login</a>
-<a href="/register">register</a>
-<a href="/logout">Logout</a>
 
 
 @section('content')

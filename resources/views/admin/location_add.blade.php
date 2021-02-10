@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','Add Category')
+@section('title','Add Location')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                               Category Add
+                        Location Add
 
                         </h2>
                         <ul class="header-dropdown m-r--5">
@@ -30,62 +30,33 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form role="form" action="{{route('admin_category_create')}}" method="post">
+                        <form role="form" action="{{route('admin_location_store')}}" method="POST">
                             @csrf
-                            <label >Parent</label>
+                            <label >Type</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <select class="form-control" name="parent_id" show-tick>
-                                        <option selected="selected">Ana Category</option>
-                                        @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}">{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
-                                        @endforeach
-
-                                    </select>
+                                    <input type="text" name="type" class="form-control" >
                                 </div>
                             </div>
-                            <label >Title</label>
+                            <label >Name</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="title" class="form-control" >
+                                    <input type="text" name="name" class="form-control" >
                                 </div>
                             </div>
-                            <label >Keywords</label>
+                            <label >Lat</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="keywords" class="form-control" >
+                                    <input type="text" name="lat" class="form-control" >
                                 </div>
                             </div>
-                            <label >Description</label>
+                            <label >Long</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="description" class="form-control" >
+                                    <input type="text" name="long" class="form-control" >
                                 </div>
                             </div>
-                            <label >Slug</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="slug" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Status</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-6">
-                                            <select class="form-control"name="status" show-tick>
-                                               <option selected="selected">False</option>
-                                                <option>True</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Category</button>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Location</button>
                         </form>
                     </div>
                 </div>

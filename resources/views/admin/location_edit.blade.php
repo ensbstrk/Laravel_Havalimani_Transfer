@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title','Add Category')
+@section('title','Edit Location')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                               Category Add
+                               Location Edit
 
                         </h2>
                         <ul class="header-dropdown m-r--5">
@@ -30,62 +30,47 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form role="form" action="{{route('admin_category_create')}}" method="post">
+                        <form role="form"action="{{route('admin_locaiton_update',['id'=>$data->id])}}" method="post">
                             @csrf
                             <label >Parent</label>
                             <div class="form-group">
                                 <div class="form-line">
                                     <select class="form-control" name="parent_id" show-tick>
-                                        <option selected="selected">Ana Category</option>
+
+
+                                        <option value="0">Ana Category</option>
                                         @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}">{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
+                                            <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif >{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}} </option>
                                         @endforeach
 
                                     </select>
                                 </div>
                             </div>
-                            <label >Title</label>
+                            <label >Type</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="title" class="form-control" >
+                                    <input type="text" name="type" class="form-control" >
                                 </div>
                             </div>
-                            <label >Keywords</label>
+                            <label >Name</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="keywords" class="form-control" >
+                                    <input type="text" name="name" class="form-control" >
                                 </div>
                             </div>
-                            <label >Description</label>
+                            <label >Lat</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="description" class="form-control" >
+                                    <input type="text" name="lat" class="form-control" >
                                 </div>
                             </div>
-                            <label >Slug</label>
+                            <label >Long</label>
                             <div class="form-group">
                                 <div class="form-line">
-                                    <input type="text" name="slug" class="form-control" >
+                                    <input type="text" name="long" class="form-control" >
                                 </div>
                             </div>
-                            <label >Status</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-6">
-                                            <select class="form-control"name="status" show-tick>
-                                               <option selected="selected">False</option>
-                                                <option>True</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Category</button>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Edit Category</button>
                         </form>
                     </div>
                 </div>

@@ -9,9 +9,6 @@
 @endsection
 @section('keyworlds',$setting->keyworlds)
 
-<a href="/login">Login</a>
-<a href="/register">register</a>
-<a href="/logout">Logout</a>
 
 
 @section('content')

@@ -27,9 +27,9 @@ class Homecontroller extends Controller
     public function index()
     {
         $setting = Setting::first();
-        $slider = Transfer::select('id', 'title', 'image', 'kmprice', 'slug')->limit(4)->get();
-        $daily = Transfer::select('id', 'title', 'image', 'kmprice', 'slug')->limit(3)->inRandomOrder()->get();
-        $last = Transfer::select('id', 'title', 'image', 'kmprice', 'slug')->limit(3)->orderByDesc('id')->get();
+        $slider = Transfer::select('id', 'title', 'image', 'baseprice', 'slug')->limit(4)->get();
+        $daily = Transfer::select('id', 'title', 'image', 'baseprice', 'slug')->limit(3)->inRandomOrder()->get();
+        $last = Transfer::select('id', 'title', 'image', 'baseprice', 'slug')->limit(3)->orderByDesc('id')->get();
         #print_r($last);
         #exit();
 
@@ -47,6 +47,7 @@ class Homecontroller extends Controller
     public function transfer($id, $slug)
     {
         $data = Transfer::find($id);
+
      #   print_r($data);
       #  exit();
         return view('home.transfer_detail', ['data'=>$data]);

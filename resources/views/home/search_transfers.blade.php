@@ -6,11 +6,6 @@
 
 
 
-<a href="/login">Login</a>
-<a href="/register">register</a>
-<a href="/logout">Logout</a>
-
-
 @section('content')
 <div id="main">
     <div class="inner">
@@ -21,7 +16,6 @@
 										<img src="{{\Illuminate\Support\Facades\Storage::url($rs->image)}}" alt="" />
 									</span>
                 <a href=>{{$search}} class="scrolly">
-                    <h2>Lorem ipsum dolor sit amet, consectetur</h2>
 
                     <p>price from: <strong> {{$rs->baseprice}}</strong>  {{$rs->title}}</p>
 

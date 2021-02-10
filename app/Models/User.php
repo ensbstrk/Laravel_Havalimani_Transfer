@@ -58,4 +58,11 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+    public function transfer(){
+        return $this->hasMany(Rezervation::class,'user_id');
+
+    }
+    public function roles(){
+        return $this->belongsToMany(Role::class);
+    }
 }

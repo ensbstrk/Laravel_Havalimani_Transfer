@@ -1,20 +1,23 @@
 @extends('layouts.admin')
 
-@section('title','Add Category')
+@section('title','Location List')
 
 @section('content')
 
-
-
     <section class="content">
+        <div class="card">
+            <div class="card-header">
+                <h2>Location</h2>
+                <a class="btn btn-primary m-t-15 waves-effect" href="{{route('admin_location_add')}}">Add Location</a>
 
+            </div>
+        </div>
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="header">
                         <h2>
-                               Category Add
-
+                            Location List
                         </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown">
@@ -30,76 +33,40 @@
                         </ul>
                     </div>
                     <div class="body">
-                        <form role="form" action="{{route('admin_category_create')}}" method="post">
-                            @csrf
-                            <label >Parent</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <select class="form-control" name="parent_id" show-tick>
-                                        <option selected="selected">Ana Category</option>
-                                        @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}">{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
-                                        @endforeach
-
-                                    </select>
-                                </div>
-                            </div>
-                            <label >Title</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="title" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Keywords</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="keywords" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Description</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="description" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Slug</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text" name="slug" class="form-control" >
-                                </div>
-                            </div>
-                            <label >Status</label>
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-6">
-                                            <select class="form-control"name="status" show-tick>
-                                               <option selected="selected">False</option>
-                                                <option>True</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">Add Category</button>
-                        </form>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Name </th>
+                                    <th>Lat</th>
+                                    <th>Long</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($datalist as $loc)
+                                    <tr>
+                                        <td>
+                                            {{$loc->type}}
+                                        </td>
+                                        <td>{{ $loc->name}}</td>
+                                        <td>{{ $loc->lat}}</td>
+                                        <td>{{ $loc->long}}</td>
+                                        <td><a href="#">Edit </a> </td>
+                                        <td><a href="#"onclick="return confirm('Delete Emin Misin?')" >Delete</a></td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </section>
-
-
-
 @endsection
-
 
 @section('footer')
     <!-- Jquery Core Js -->
@@ -134,4 +101,3 @@
 
     <!-- Demo Js -->
 @endsection
-
